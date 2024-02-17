@@ -1,0 +1,29 @@
+.nav{
+  display: flex;
+  justify-content:center;
+  flex-direction: row;
+  background-color:#34469C;
+  padding-bottom:10px;
+}
+.left-nav{
+  display:flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  width:50%;
+}
+.right-nav{
+  display:flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  width:50%;
+}
+.right-nav-buttons{
+  padding-right:30px;
+  font-family: Roboto, serif;
+  font-size:24px;
+  color:white;
+}
+.logo{
+  padding-left:15px;
+  width:100px;
+}
