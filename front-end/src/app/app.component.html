@@ -1,13 +1,17 @@
-<div class="nav">
-  <div class="left-nav">
-    <button class="logo"><img src="assets/logo.png"></button>
+<div class="page">
+  <div class="nav">
+    <div class="left-nav">
+      <button class="logo" ><img alt="logo" src="assets/logo.png"></button>
+    </div>
+    <div class="right-nav">
+      <button class ="right-nav-buttons">Начало</button>
+      <button class ="right-nav-buttons">За нас</button>
+      <button class ="right-nav-buttons">Контакти</button>
+      <button class="right-nav-buttons" style="padding-right:20px">Вход</button>
+    </div>
   </div>
-  <div class="right-nav">
-    <button class ="right-nav-buttons">Начало</button>
-    <button class ="right-nav-buttons">За нас</button>
-    <button class ="right-nav-buttons">Контакти</button>
-    <button class="right-nav-buttons" style="padding-right:20px">Вход</button>
-  </div>
+  <router-outlet></router-outlet>
+  <footer class="footer">
+    hey
+  </footer>
 </div>
-
-<router-outlet></router-outlet>
