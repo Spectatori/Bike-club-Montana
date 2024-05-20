@@ -10,8 +10,10 @@
       <button class="right-nav-buttons" style="padding-right:20px">Вход</button>
     </div>
   </div>
-  <div class="menu">
-    <img alt="home" class="icon" ngSrc="assets/icons/home.svg" routerLink="" height="512" width="512">
+  <div class="menu-container" (mouseenter)="expandMenu()" (mouseleave)="collapseMenu()">
+    <div class="menu" [ngClass]="{ 'expanded': isExpanded }">
+      <img *ngFor="let item of menuItems" [alt]="item.alt" class="menu-item" [ngSrc]="item.src" [routerLink]="item.link" height="512" width="512">
+    </div>
   </div>
   <router-outlet></router-outlet>
   <footer class="footer">

@@ -10,5 +10,16 @@ import {RouterLink, RouterOutlet} from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'front-end';
+  isExpanded = false;
+  menuItems=[
+    {src: 'assets/icons/home.svg', alt:'home', link:''},
+    {src: 'assets/icons/settings.svg', alt:'settings', link:''},
+    {src: 'assets/icons/settings.svg', alt:'settings', link:''}
+  ]
+  expandMenu(){
+    this.isExpanded = true;
+  }
+  collapseMenu(){
+    this.isExpanded = false;
+  }
 }
