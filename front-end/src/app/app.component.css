@@ -10,16 +10,19 @@
 }
 .nav{
   display: flex;
-  justify-content:center;
+  justify-content:end;
   flex-direction: row;
   background-color:#4A55A2;
-  padding-bottom:10px;
+  height:5vw;
 }
 .left-nav{
   display:flex;
   justify-content: flex-start;
   flex-direction: row;
   width:50%;
+  position:absolute;
+  top:0;
+  left:0;
 }
 .right-nav{
   display:flex;
@@ -27,6 +30,7 @@
   flex-direction: row;
   width:50%;
   padding-right:1%;
+
 }
 .right-nav-buttons{
   padding-right:3%;
@@ -40,7 +44,7 @@
 }
 .logo{
   padding-left:15px;
-  width:100px;
+  width:6vw;
   transition:all 0.3s ease-in-out;
   &:hover{
     transform:scale(1.1)
@@ -91,4 +95,15 @@
 }
 .menu-item:hover {
   transform: scale(1.2);
+}
+.test{
+  width: 2px;
+  height: 2px;
+  border-top: 23.5vw solid #00EBBD;
+  border-bottom: 23.5vw solid transparent;
+  border-right: 23.5vw solid transparent;
+  border-left: 23.5vw solid #00EBBD;
+  position: absolute;
+  top:0;
+  left:0;
 }
