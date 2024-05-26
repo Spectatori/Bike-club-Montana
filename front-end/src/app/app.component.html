@@ -1,9 +1,5 @@
 <div class="page">
-  <div class="test"></div>
   <div class="nav">
-    <div class="left-nav">
-      <button class="logo" ><img alt="logo" ngSrc="assets/logo.png" height="622" width="612" priority></button>
-    </div>
     <div class="right-nav">
       <button class ="right-nav-buttons">Начало</button>
       <button class ="right-nav-buttons">За нас</button>
@@ -11,12 +7,18 @@
       <button class="right-nav-buttons" style="padding-right:20px">Вход</button>
     </div>
   </div>
+  <router-outlet></router-outlet>
+  <div class="left-nav">
+    <button class="logo" style="width:3vw"><img alt="logo" ngSrc="assets/icons/instagram.svg" height="622" width="612" priority></button>
+    <button class="logo" style="width:3vw;"><img alt="logo" ngSrc="assets/icons/facebook.svg" height="622" width="612" priority></button>
+    <button class="logo" ><img alt="logo" ngSrc="assets/logo.png" height="622" width="612" priority></button>
+    <div class="club-name">„КК Монтана“</div>
+  </div>
   <div class="menu-container" (mouseenter)="expandMenu()" (mouseleave)="collapseMenu()">
     <div class="menu" [ngClass]="{ 'expanded': isExpanded }">
       <img *ngFor="let item of menuItems" [alt]="item.alt" class="menu-item" [ngSrc]="item.src" [routerLink]="item.link" height="512" width="512">
     </div>
   </div>
-  <router-outlet></router-outlet>
   <footer class="footer">
     hey
   </footer>
