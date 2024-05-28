@@ -1,0 +1,60 @@
+.triangle {
+  width: 2px;
+  height: 2px;
+  border-top: 23.5vw solid #00EBBD;
+  border-bottom: 23.5vw solid transparent;
+  border-right: 23.5vw solid transparent;
+  border-left: 23.5vw solid #00EBBD;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.first-panel {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+
+.carousel {
+  width: 40rem;
+  height: 40rem;
+  position: relative;
+  overflow: hidden;
+  padding: 9rem;
+}
+
+.carousel img {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel img.active {
+  display: flex;
+  border-radius: 5px;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  color: white;
+  padding: 1rem;
+  cursor: pointer;
+  z-index: 1;
+  border: solid black;
+  border-width: 0 5px 5px 0;
+  border-radius: 5px;
+  opacity:0.6;
+  display: inline-block;
+}
+
+.carousel-button.prev {
+  left:25%;
+  transform: translateY(-50%) rotate(135deg);
+}
+
+.carousel-button.next {
+  right: 25%;
+  transform: translateY(-50%) rotate(-45deg);
+}
