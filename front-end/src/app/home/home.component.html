@@ -1,8 +1,14 @@
-<div class="triangle"></div>
-<div class="first-panel">
-  <div class="carousel">
-    <button class="carousel-button prev" (click)="prevSlide()"></button>
-    <img class="slide" *ngFor="let slide of slides; let i = index" [src]="slide.src" [class.active]="i === currentIndex" alt="slide">
-    <button class="carousel-button next" (click)="nextSlide()"></button>
-  </div>
+<div class="app-container">
+  <app-nav></app-nav>
+  <main>
+    <div class="first-panel">
+      <div class="carousel">
+        <button class="carousel-button prev" (click)="prevSlide()"></button>
+        <img class="slide" *ngFor="let slide of slides; let i = index" [src]="slide.src" [class.active]="i === currentIndex" [alt]="slide.alt">
+        <button class="carousel-button next" (click)="nextSlide()"></button>
+      </div>
+    </div>
+    <app-side-menu></app-side-menu>
+  </main>
+  <app-footer></app-footer>
 </div>

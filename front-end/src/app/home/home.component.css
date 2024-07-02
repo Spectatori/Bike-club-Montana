@@ -1,15 +1,13 @@
-.triangle {
-  width: 2px;
-  height: 2px;
-  border-top: 23.5vw solid #00EBBD;
-  border-bottom: 23.5vw solid transparent;
-  border-right: 23.5vw solid transparent;
-  border-left: 23.5vw solid #00EBBD;
-  position: absolute;
-  top: 0;
-  left: 0;
+.page{
+  display:flex;
+  flex-direction: column;
+  background-position: center;
+  background-size:cover;
+  background-color:white;
+  min-height:100%;
+  height:100vh;
+  justify-content: center;
 }
-
 .first-panel {
   display: flex;
   justify-content: flex-end;
@@ -57,4 +55,12 @@
 .carousel-button.next {
   right: 25%;
   transform: translateY(-50%) rotate(-45deg);
+}
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  flex: 1;
 }

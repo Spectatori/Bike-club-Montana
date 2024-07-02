@@ -1,0 +1,38 @@
+.menu-container {
+  display:flex;
+  flex-direction:column;
+  position:fixed;
+  justify-content:center;
+  width:5%;
+  margin-left:1%;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top:50%;
+  justify-content: center;
+  background-color: #4A55A2;
+  width: 4%;
+  margin-left: 1%;
+  align-self: flex-start;
+  border-radius: 1.5rem;
+  padding: 1.2%;
+  gap: 1rem;
+  opacity: 0.6;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  max-height: 3rem;
+}
+.menu.expanded {
+  opacity: 0.8;
+  max-height:20rem;
+}
+.menu-item {
+  height: 2rem;
+  transition: all 0.4s ease-in-out;
+}
+.menu-item:hover {
+  transform: scale(1.2);
+}
+

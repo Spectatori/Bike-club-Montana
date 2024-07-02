@@ -1,20 +1,26 @@
 import { Component,} from '@angular/core';
-import {NgOptimizedImage, CommonModule, NgFor, NgForOf} from "@angular/common";
+import {NgOptimizedImage, NgForOf} from "@angular/common";
+import {FooterComponent} from "../../layouts/footer/footer.component";
+import {SideMenuComponent} from "../../layouts/side-menu/side-menu.component";
+import {NavComponent} from "../../layouts/nav/nav.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
   imports: [
     NgOptimizedImage,
-    NgForOf
+    NgForOf,
+    FooterComponent,
+    SideMenuComponent,
+    NavComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
   public slides= [
-    {src: 'assets/pictures/champagne.png'},
-    {src: 'assets/pictures/tester.png'},
+    {src: 'assets/pictures/champagne.png', alt:'champagne'},
+    {src: 'assets/pictures/tester.png', alt:'tester'},
   ]
   currentIndex = 0;
   nextSlide(){
