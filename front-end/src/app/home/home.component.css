@@ -58,3 +58,15 @@ main {
   flex-direction:row-reverse;
   justify-content:space-between;
 }
+.information-board{
+  display:flex;
+  width:50rem;
+  position:relative;
+  justify-content: center;
+}
+.header{
+  font-size:3rem;
+}
+.information-text{
+
+}

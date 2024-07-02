@@ -2,7 +2,14 @@
   <app-nav></app-nav>
   <main>
     <div class="first-panel">
+      <div class="information-board">
+        <div class="header">
+          <p>Club information</p>
+        </div>
+        <div class="information-text">
 
+        </div>
+      </div>
       <div class="carousel">
         <button class="carousel-button prev" (click)="prevSlide()"></button>
         <img class="slide" *ngFor="let slide of slides; let i = index" [src]="slide.src" [class.active]="i === currentIndex" [alt]="slide.alt">
