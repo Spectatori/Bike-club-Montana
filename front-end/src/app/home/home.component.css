@@ -3,6 +3,7 @@
   justify-content: flex-end;
   flex-direction: row;
 }
+
 .carousel {
   width: 40rem;
   height: 40rem;
@@ -18,7 +19,7 @@
 }
 
 .carousel img.active {
-  display: flex;
+  display: block;
   border-radius: 5px;
 }
 
@@ -52,4 +53,8 @@
 }
 main {
   flex: 1;
+  display:flex;
+  align-items: center;
+  flex-direction:row-reverse;
+  justify-content:space-between;
 }
