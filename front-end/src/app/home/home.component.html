@@ -2,6 +2,7 @@
   <app-nav></app-nav>
   <main>
     <div class="first-panel">
+
       <div class="carousel">
         <button class="carousel-button prev" (click)="prevSlide()"></button>
         <img class="slide" *ngFor="let slide of slides; let i = index" [src]="slide.src" [class.active]="i === currentIndex" [alt]="slide.alt">
