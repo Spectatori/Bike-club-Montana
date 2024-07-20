@@ -27,11 +27,11 @@
   position: absolute;
   top: 50%;
   color: white;
-  padding: 1rem;
+  padding: 0.5rem;
   cursor: pointer;
   z-index: 1;
   border: solid black;
-  border-width: 0 5px 5px 0;
+  border-width: 0 3px 3px 0;
   border-radius: 5px;
   opacity:0.6;
   display: inline-block;
@@ -46,10 +46,10 @@
   right: 25%;
   transform: translateY(-50%) rotate(-45deg);
 }
-.app-container {
+.first-container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 93.5vh;
 }
 main {
   flex: 1;
@@ -60,13 +60,50 @@ main {
 }
 .information-board{
   display:flex;
-  width:50rem;
+  width:60rem;
   position:relative;
   justify-content: center;
+  align-items: start;
+  flex-direction:column;
 }
 .header{
   font-size:3rem;
+  font-family: Verdana, serif;
+  font-weight: bold;
 }
 .information-text{
 
+}
+.information-text p{
+  font-size:1.2rem;
+  font-family: Monaco, serif;
+  text-align:start;
+}
+.information-text p.head{
+  font-size:1.5rem;
+}
+/*.semi-circle {*/
+/*  width: 40vw;*/
+/*  height: 40vw;*/
+/*  border-radius: 50%;*/
+/*  background-color: #00EBBD;*/
+/*  clip-path: polygon(0 0, 50% 0, 50% 50%, 50% 100%, 0 100%);*/
+/*  position: absolute;*/
+/*  right: -20vw; !* Adjusting to ensure the semi-circle is half off-screen *!*/
+/*  top: 50%;*/
+/*  transform: translateY(-50%);*/
+/*}*/
+.our-races{
+  display:flex;
+  width:100%;
+  justify-content:center;
+}
+.our-races img{
+  width:20vw;
+  height:40vh;
+}
+.second-container{
+  display: flex;
+  flex-direction: column;
+  min-height: 93.5vh;
 }

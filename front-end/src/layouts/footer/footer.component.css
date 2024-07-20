@@ -7,3 +7,19 @@
   height:4rem;
   margin-top:auto;
 }
+.left{
+  display:flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  width:50%;
+  position:absolute;
+  left:0;
+}
+.logo{
+  padding-left:15px;
+  width:6vw;
+  transition:all 0.3s ease-in-out;
+  &:hover{
+    transform:scale(1.1)
+  }
+}
