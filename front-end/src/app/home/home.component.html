@@ -23,9 +23,9 @@
         </div>
       </div>
       <div class="carousel">
-        <button class="carousel-button prev" (click)="prevSlide()"></button>
-        <img class="slide" *ngFor="let slide of slides; let i = index" [src]="slide.src" [class.active]="i === currentIndex" [alt]="slide.alt">
-        <button class="carousel-button next" (click)="nextSlide()"></button>
+        <button class="carousel-button prev" (click)="infoPrevSlide()"></button>
+        <img class="slide" *ngFor="let slide of infoSlides; let i = index" [src]="slide.src" [class.active]="i === infoCurrentIndex" [alt]="slide.alt">
+        <button class="carousel-button next" (click)="infoNextSlide()"></button>
       </div>
     </div>
     <app-side-menu></app-side-menu>
@@ -45,9 +45,9 @@
         </div>
       </div>
       <div class="carousel">
-        <button class="carousel-button prev" (click)="prevSlide()"></button>
-        <img class="slide" *ngFor="let slide of slides; let i = index" [src]="slide.src" [class.active]="i === currentIndex" [alt]="slide.alt">
-        <button class="carousel-button next" (click)="nextSlide()"></button>
+        <button class="carousel-button prev" (click)="winnerPrevSlide()"></button>
+        <img class="slide" *ngFor="let slide of winnerSlides; let i = index" [src]="slide.src" [class.active]="i === winnerCurrentIndex" [alt]="slide.alt">
+        <button class="carousel-button next" (click)="winnerNextSlide()"></button>
         <p>„Огоста DH 2023“</p>
       </div>
   </div>

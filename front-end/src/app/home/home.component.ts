@@ -18,15 +18,26 @@ import {NavComponent} from "../../layouts/nav/nav.component";
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-  public slides= [
+  public infoSlides= [
     {src: 'assets/pictures/champagne.png', alt:'champagne'},
     {src: 'assets/pictures/tester.png', alt:'tester'},
   ]
-  currentIndex = 0;
-  nextSlide(){
-    this.currentIndex = (this.currentIndex + 1) % this.slides.length;
+  infoCurrentIndex = 0;
+  infoNextSlide(){
+    this.infoCurrentIndex = (this.infoCurrentIndex + 1) % this.infoSlides.length;
   }
-  prevSlide(){
-    this.currentIndex = (this.currentIndex - 1 + this.slides.length) % this.slides.length;
+  infoPrevSlide(){
+    this.infoCurrentIndex = (this.infoCurrentIndex - 1 + this.infoSlides.length) % this.infoSlides.length;
+  }
+  public winnerSlides= [
+    {src: 'assets/pictures/champagne.png', alt:'champagne'},
+    {src: 'assets/pictures/tester.png', alt:'tester'},
+  ]
+  winnerCurrentIndex = 0;
+  winnerNextSlide(){
+    this.winnerCurrentIndex = (this.winnerCurrentIndex + 1) % this.winnerSlides.length;
+  }
+  winnerPrevSlide(){
+    this.winnerCurrentIndex = (this.winnerCurrentIndex - 1 + this.winnerSlides.length) % this.winnerSlides.length;
   }
 }
