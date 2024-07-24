@@ -139,14 +139,24 @@ main {
       font-family:Verdana, serif;
       font-size:2.5rem;
     }
+    /* Hide all descriptions initially */
+      p {
+      display: none;
+    }
+
+    /* Show the description for the active slide */
+      p.active {
+      display: block;
+    }
+
   }
   .carousel-button.prev {
     left:5%;
-    transform: translateY(-150%) rotate(135deg);
+    transform: translateY(1000%) rotate(135deg);
   }
   .carousel-button.next {
     right: 5%;
-    transform: translateY(-150%) rotate(-45deg);
+    transform: translateY(1000%) rotate(-45deg);
   }
 }
 
@@ -155,6 +165,12 @@ main {
   flex-direction:column;
   align-items:center;
   width:40%;
+
+  h1{
+    font-size:3rem;
+    font-family:Verdana, serif;
+    font-weight: bold;
+  }
 }
 
 .winners-board{
@@ -166,6 +182,7 @@ main {
   border-radius:0.5rem;
 
   p{
+    font-size:2rem;
     color:white;
   }
 }

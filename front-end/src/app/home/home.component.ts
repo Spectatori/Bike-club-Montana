@@ -18,6 +18,7 @@ import {NavComponent} from "../../layouts/nav/nav.component";
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+
   public infoSlides= [
     {src: 'assets/pictures/champagne.png', alt:'champagne'},
     {src: 'assets/pictures/tester.png', alt:'tester'},
@@ -29,9 +30,10 @@ export class HomeComponent {
   infoPrevSlide(){
     this.infoCurrentIndex = (this.infoCurrentIndex - 1 + this.infoSlides.length) % this.infoSlides.length;
   }
+
   public winnerSlides= [
-    {src: 'assets/pictures/champagne.png', alt:'champagne'},
-    {src: 'assets/pictures/tester.png', alt:'tester'},
+    {src: 'assets/pictures/winner.jpg', alt:'winner', description:'„Огоста DH 2023“'},
+    {src: 'assets/pictures/tester.png', alt:'tester', description:'test'},
   ]
   winnerCurrentIndex = 0;
   winnerNextSlide(){

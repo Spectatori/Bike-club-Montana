@@ -37,18 +37,18 @@
   </div>
   <div class="panels">
       <div class="winners">
-        Winners:
+        <h1>Winners:</h1>
         <div class="winners-board">
-          <p>asd</p>
-          <p>asd</p>
-          <p>asd</p>
+          <p>1. Стефчо Стефчов Стефчов</p>
+          <p>2. Спас Линукса Щерев</p>
+          <p>3. Тони Могуса Ганев</p>
         </div>
       </div>
       <div class="carousel">
         <button class="carousel-button prev" (click)="winnerPrevSlide()"></button>
         <img class="slide" *ngFor="let slide of winnerSlides; let i = index" [src]="slide.src" [class.active]="i === winnerCurrentIndex" [alt]="slide.alt">
         <button class="carousel-button next" (click)="winnerNextSlide()"></button>
-        <p>„Огоста DH 2023“</p>
+        <p *ngFor="let slide of winnerSlides; let i = index;" [class.active]="i === winnerCurrentIndex">{{slide.description}}</p>
       </div>
   </div>
 </div>
