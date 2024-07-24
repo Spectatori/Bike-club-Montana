@@ -1,7 +1,7 @@
 <div class="first-container">
   <app-nav></app-nav>
   <main>
-    <div class="first-panel">
+    <div class="container">
       <div class="information-board">
         <div class="header">
           <p>Club information</p>
@@ -34,6 +34,22 @@
 <div class="second-container">
   <div class="our-races">
     <img alt="our-races" ngSrc="assets/pictures/our-races.png" height="200" width="200" priority>
+  </div>
+  <div class="panels">
+      <div class="winners">
+        Winners:
+        <div class="winners-board">
+          <p>asd</p>
+          <p>asd</p>
+          <p>asd</p>
+        </div>
+      </div>
+      <div class="carousel">
+        <button class="carousel-button prev" (click)="prevSlide()"></button>
+        <img class="slide" *ngFor="let slide of slides; let i = index" [src]="slide.src" [class.active]="i === currentIndex" [alt]="slide.alt">
+        <button class="carousel-button next" (click)="nextSlide()"></button>
+        <p>„Огоста DH 2023“</p>
+      </div>
   </div>
 </div>
 

@@ -1,26 +1,28 @@
-.first-panel {
+.container {
   display: flex;
   justify-content: flex-end;
   flex-direction: row;
+
 }
 
 .carousel {
-  width: 40rem;
-  height: 40rem;
   position: relative;
   overflow: hidden;
+  img {
+    display: none;
+    width: 100%;
+    height: 100%;
+  }
+  img.active {
+    display: block;
+    border-radius: 5px;
+  }
+}
+
+.container .carousel .slide{
+  width: 40rem;
+  height: 40rem;
   padding: 9rem;
-}
-
-.carousel img {
-  display: none;
-  width: 100%;
-  height: 100%;
-}
-
-.carousel img.active {
-  display: block;
-  border-radius: 5px;
 }
 
 .carousel-button {
@@ -37,20 +39,22 @@
   display: inline-block;
 }
 
-.carousel-button.prev {
+.container .carousel-button.prev {
   left:25%;
   transform: translateY(-50%) rotate(135deg);
 }
 
-.carousel-button.next {
+.container .carousel-button.next {
   right: 25%;
   transform: translateY(-50%) rotate(-45deg);
 }
+
 .first-container {
   display: flex;
   flex-direction: column;
   min-height: 93.5vh;
 }
+
 main {
   flex: 1;
   display:flex;
@@ -58,6 +62,7 @@ main {
   flex-direction:row-reverse;
   justify-content:space-between;
 }
+
 .information-board{
   display:flex;
   width:60rem;
@@ -66,22 +71,24 @@ main {
   align-items: start;
   flex-direction:column;
 }
+
 .header{
   font-size:3rem;
   font-family: Verdana, serif;
   font-weight: bold;
 }
-.information-text{
 
+.information-text{
+  p{
+    font-size:1.2rem;
+    font-family: Monaco, serif;
+    text-align:start;
+  }
+  p.head{
+    font-size:1.5rem;
+  }
 }
-.information-text p{
-  font-size:1.2rem;
-  font-family: Monaco, serif;
-  text-align:start;
-}
-.information-text p.head{
-  font-size:1.5rem;
-}
+
 /*.semi-circle {*/
 /*  width: 40vw;*/
 /*  height: 40vw;*/
@@ -93,17 +100,59 @@ main {
 /*  top: 50%;*/
 /*  transform: translateY(-50%);*/
 /*}*/
+
 .our-races{
   display:flex;
   width:100%;
   justify-content:center;
+  img{
+    width:20vw;
+    height:40vh;
+  }
 }
-.our-races img{
-  width:20vw;
-  height:40vh;
-}
+
 .second-container{
   display: flex;
   flex-direction: column;
-  min-height: 93.5vh;
+  min-height: 100vh;
+}
+
+.panels{
+  display: flex;
+  flex-direction: row;
+  min-width:100%;
+  .carousel .slide{
+    width: 90rem;
+    height: 20rem;
+  }
+  .carousel-button.prev {
+    left:5%;
+    transform: translateY(-50%) rotate(135deg);
+  }
+  .carousel-button.next {
+    right: 5%;
+    transform: translateY(-50%) rotate(-45deg);
+  }
+  .carousel .slide {
+    width: 40rem;
+  }
+}
+
+.winners{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  width:40%;
+}
+
+.winners-board{
+  display:flex;
+  flex-direction:column;
+  background-color:#34469C;
+  width:fit-content;
+  padding:0.5rem;
+  border-radius:0.5rem;
+  p{
+    color:white;
+  }
 }
