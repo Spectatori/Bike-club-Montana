@@ -44,6 +44,7 @@
           <p *ngFor="let slide of winnerSlides; let i = index;" [class.active]="i === winnerCurrentIndex">{{slide.winners[0].third}}</p>
         </div>
       </div>
+    <div class="triangle"></div>
       <div class="carousel">
         <button class="carousel-button prev" (click)="winnerPrevSlide()"></button>
         <img class="slide" *ngFor="let slide of winnerSlides; let i = index" [src]="slide.src" [class.active]="i === winnerCurrentIndex" [alt]="slide.alt">
