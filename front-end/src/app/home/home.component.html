@@ -36,20 +36,31 @@
     <img alt="our-races" ngSrc="assets/pictures/our-races.png" height="200" width="200" priority>
   </div>
   <div class="panels">
-      <div class="winners">
-        <h1>Winners:</h1>
-        <div class="winners-board">
-          <p *ngFor="let slide of winnerSlides; let i = index;" [class.active]="i === winnerCurrentIndex">{{slide.winners[0].first}}</p>
-          <p *ngFor="let slide of winnerSlides; let i = index;" [class.active]="i === winnerCurrentIndex">{{slide.winners[0].second}}</p>
-          <p *ngFor="let slide of winnerSlides; let i = index;" [class.active]="i === winnerCurrentIndex">{{slide.winners[0].third}}</p>
-        </div>
-      </div>
+    <div class="winners-info">
+      <h1>1st: John Doe</h1>
+      <h2>Achievement: Winner of the "Mountain Trail Challenge 2023"</h2>
+      <h2>Description: John showcased exceptional endurance and skill, conquering the rugged terrain with unmatched determination. His victory is a testament to his dedication and love for mountain biking.</h2>
+      <h1>2nd: Jane Smit</h1>
+      <h2>Achievement: Champion of the "City Sprint Race 2023"</h2>
+      <h2>Description: Jane's lightning-fast speed and strategic maneuvers led her to triumph in the highly competitive city sprint race. Her win highlights her agility and tactical prowess in urban cycling.</h2>
+      <h1>3rd: Mark Johnson</h1>
+      <h2>Achievement: First Place in the "Coastal Cruise Marathon 2023"</h2>
+      <h2>Description: Mark demonstrated incredible stamina and consistency throughout the marathon, navigating the scenic coastal routes with ease. His achievement underscores his passion for long-distance cycling and his exceptional physical fitness.</h2>
+    </div>
     <div class="triangle"></div>
       <div class="carousel">
         <button class="carousel-button prev" (click)="winnerPrevSlide()"></button>
         <img class="slide" *ngFor="let slide of winnerSlides; let i = index" [src]="slide.src" [class.active]="i === winnerCurrentIndex" [alt]="slide.alt">
         <button class="carousel-button next" (click)="winnerNextSlide()"></button>
         <p *ngFor="let slide of winnerSlides; let i = index;" [class.active]="i === winnerCurrentIndex">{{slide.description}}</p>
+        <div class="winners">
+          <h1>Winners:</h1>
+          <div class="winners-board">
+            <h2 *ngFor="let slide of winnerSlides; let i = index;" [class.active]="i === winnerCurrentIndex">{{slide.winners[0].first}}</h2>
+            <h2 *ngFor="let slide of winnerSlides; let i = index;" [class.active]="i === winnerCurrentIndex">{{slide.winners[0].second}}</h2>
+            <h2 *ngFor="let slide of winnerSlides; let i = index;" [class.active]="i === winnerCurrentIndex">{{slide.winners[0].third}}</h2>
+          </div>
+        </div>
       </div>
   </div>
 </div>

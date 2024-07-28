@@ -108,11 +108,12 @@ main {
   display:flex;
   width:100%;
   justify-content:center;
+  padding-top: 2.5rem;
   z-index:950;
 
   img{
-    width:20vw;
-    height:40vh;
+    width:12vw;
+    height:24vh;
   }
 }
 
@@ -130,12 +131,15 @@ main {
   min-width:100%;
 
   .carousel {
+    display:flex;
+    align-items: center;
+    flex-direction: column;
     text-align:center;
     z-index:950;
 
     .slide{
-      width: 40rem;
-      height: 25rem;
+      width: 32rem;
+      height: 20rem;
     }
 
     p{
@@ -155,11 +159,11 @@ main {
   }
   .carousel-button.prev {
     left:5%;
-    transform: translateY(1000%) rotate(135deg);
+    transform: translateY(400%) rotate(135deg);
   }
   .carousel-button.next {
     right: 5%;
-    transform: translateY(1000%) rotate(-45deg);
+    transform: translateY(400%) rotate(-45deg);
   }
 }
 
@@ -167,25 +171,25 @@ main {
   display:flex;
   flex-direction:column;
   align-items:center;
-  width:40%;
+  width:50%;
   z-index:950;
 
   h1{
-    font-size:3rem;
+    font-size:2rem;
     font-family:Verdana, serif;
     font-weight: bold;
   }
-  p{
+  h2{
     font-family:Verdana, serif;
-    font-size:2.5rem;
+    font-size:2rem;
   }
   /* Hide all descriptions initially */
-  p {
+  h2 {
     display: none;
   }
 
   /* Show the description for the active slide */
-  p.active {
+  h2.active {
     display: block;
   }
 }
@@ -197,9 +201,10 @@ main {
   width:fit-content;
   padding:0.5rem;
   border-radius:0.5rem;
+  align-items:start;
 
-  p{
-    font-size:2rem;
+  h2{
+    font-size:1.3rem;
     color:white;
   }
 }
@@ -215,4 +220,18 @@ main {
   z-index:900;
   left:15%;
   transform:rotate(60deg);
+}
+.winners-info{
+  display:flex;
+  width:50%;
+  flex-direction:column;
+  z-index:950;
+  h1{
+    font-size:2.5rem;
+    font-family:Verdana, serif;
+  }
+  h2{
+    font-size:1.5rem;
+
+  }
 }
