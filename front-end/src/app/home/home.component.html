@@ -39,9 +39,9 @@
       <div class="winners">
         <h1>Winners:</h1>
         <div class="winners-board">
-          <p>1. Стефчо Стефчов Стефчов</p>
-          <p>2. Спас Линукса Щерев</p>
-          <p>3. Тони Могуса Ганев</p>
+          <p *ngFor="let slide of winnerSlides; let i = index;" [class.active]="i === winnerCurrentIndex">{{slide.winners[0].first}}</p>
+          <p *ngFor="let slide of winnerSlides; let i = index;" [class.active]="i === winnerCurrentIndex">{{slide.winners[0].second}}</p>
+          <p *ngFor="let slide of winnerSlides; let i = index;" [class.active]="i === winnerCurrentIndex">{{slide.winners[0].third}}</p>
         </div>
       </div>
       <div class="carousel">

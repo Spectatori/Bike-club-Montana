@@ -32,8 +32,8 @@ export class HomeComponent {
   }
 
   public winnerSlides= [
-    {src: 'assets/pictures/winner.jpg', alt:'winner', description:'„Огоста DH 2023“'},
-    {src: 'assets/pictures/tester.png', alt:'tester', description:'test'},
+    {src: 'assets/pictures/winner.jpg', alt:'winner', description:'„Огоста DH 2023“',winners:[{first:"1.Test Testov Testov1", second:"2.Test Testov", third:"3.Test"}]},
+    {src: 'assets/pictures/tester.png', alt:'tester', description:'test' ,winners:[{first:"1.Test Testov Testov2", second:"2.Test Testov", third:"3.Test"}]},
   ]
   winnerCurrentIndex = 0;
   winnerNextSlide(){

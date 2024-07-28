@@ -171,6 +171,19 @@ main {
     font-family:Verdana, serif;
     font-weight: bold;
   }
+  p{
+    font-family:Verdana, serif;
+    font-size:2.5rem;
+  }
+  /* Hide all descriptions initially */
+  p {
+    display: none;
+  }
+
+  /* Show the description for the active slide */
+  p.active {
+    display: block;
+  }
 }
 
 .winners-board{
