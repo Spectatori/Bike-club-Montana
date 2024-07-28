@@ -12,9 +12,11 @@ import { RouterLink } from "@angular/router";
 export class SideMenuComponent {
   isExpanded = false;
   menuItems=[
+    {src: 'assets/icons/contacts.svg', alt:'contacts', link:'/contacts'},
+    {src: 'assets/icons/about.svg', alt:'about', link:'/about'},
     {src: 'assets/icons/home.svg', alt:'home', link:''},
-    {src: 'assets/icons/settings.svg', alt:'settings', link:''},
-    {src: 'assets/icons/settings.svg', alt:'settings', link:''}
+    {src: 'assets/icons/login.svg', alt:'login', link:'access'},
+    {src: 'assets/icons/login.svg', alt:'login', link:'access'},
   ]
   expandMenu(){
     this.isExpanded = true;

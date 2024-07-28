@@ -58,3 +58,7 @@
   padding-left:1vw;
   align-self:center;
 }
+.active {
+  font-weight: bold;
+  color: black;
+}
