@@ -38,7 +38,9 @@
   <div class="panels">
     <div class="winners-info">
       <h1>1st: John Doe</h1>
-      <h2>Achievement: Winner of the "Mountain Trail Challenge 2023"</h2>
+      <h2 *ngFor="let slide of winnerSlides; let i = index;" [class.active]="i === winnerCurrentIndex">
+        <span class="achievements-label">Achievements:</span> {{slide.winners[0].first.achievements}}
+      </h2>
       <h2>Description: John showcased exceptional endurance and skill, conquering the rugged terrain with unmatched determination. His victory is a testament to his dedication and love for mountain biking.</h2>
       <h1>2nd: Jane Smit</h1>
       <h2>Achievement: Champion of the "City Sprint Race 2023"</h2>
@@ -56,7 +58,7 @@
         <div class="winners">
           <h1>Winners:</h1>
           <div class="winners-board">
-            <h2 *ngFor="let slide of winnerSlides; let i = index;" [class.active]="i === winnerCurrentIndex">{{slide.winners[0].first}}</h2>
+            <h2 *ngFor="let slide of winnerSlides; let i = index;" [class.active]="i === winnerCurrentIndex">{{slide.winners[0].first.name}}</h2>
             <h2 *ngFor="let slide of winnerSlides; let i = index;" [class.active]="i === winnerCurrentIndex">{{slide.winners[0].second}}</h2>
             <h2 *ngFor="let slide of winnerSlides; let i = index;" [class.active]="i === winnerCurrentIndex">{{slide.winners[0].third}}</h2>
           </div>

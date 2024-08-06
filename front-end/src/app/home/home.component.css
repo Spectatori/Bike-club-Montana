@@ -233,6 +233,14 @@ main {
   h2{
     font-size:1.5rem;
   }
+  h2 {
+    display: none;
+  }
+
+  /* Show the description for the active slide */
+  h2.active {
+    display: block;
+  }
 }
 
 .third-container{
@@ -251,4 +259,8 @@ main {
     width:15vw;
     height:30vh;
   }
+}
+.achievements-label{
+  font-weight: bold;
+  font-size: 24px;"
 }
