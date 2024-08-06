@@ -37,17 +37,27 @@
   </div>
   <div class="panels">
     <div class="winners-info">
-      <h1>1st: John Doe</h1>
+      <h1 *ngFor="let slide of winnerSlides; let i = index;" [class.active]="i === winnerCurrentIndex">{{slide.winners[0].first.name}}</h1>
       <h2 *ngFor="let slide of winnerSlides; let i = index;" [class.active]="i === winnerCurrentIndex">
         <span class="achievements-label">Achievements:</span> {{slide.winners[0].first.achievements}}
       </h2>
-      <h2>Description: </h2>
-      <h1>2nd: Jane Smit</h1>
-      <h2>Achievement: Champion of the "City Sprint Race 2023"</h2>
-      <h2>Description: Jane's lightning-fast speed and strategic maneuvers led her to triumph in the highly competitive city sprint race. Her win highlights her agility and tactical prowess in urban cycling.</h2>
-      <h1>3rd: Mark Johnson</h1>
-      <h2>Achievement: First Place in the "Coastal Cruise Marathon 2023"</h2>
-      <h2>Description: Mark demonstrated incredible stamina and consistency throughout the marathon, navigating the scenic coastal routes with ease. His achievement underscores his passion for long-distance cycling and his exceptional physical fitness.</h2>
+      <h2 *ngFor="let slide of winnerSlides; let i = index;" [class.active]="i === winnerCurrentIndex">
+        <span class="achievements-label">Description:</span> {{slide.winners[0].first.description}}
+      </h2>
+      <h1 *ngFor="let slide of winnerSlides; let i = index;" [class.active]="i === winnerCurrentIndex">{{slide.winners[0].second.name}}</h1>
+      <h2 *ngFor="let slide of winnerSlides; let i = index;" [class.active]="i === winnerCurrentIndex">
+        <span class="achievements-label">Achievements:</span> {{slide.winners[0].second.achievements}}
+      </h2>
+      <h2 *ngFor="let slide of winnerSlides; let i = index;" [class.active]="i === winnerCurrentIndex">
+        <span class="achievements-label">Description:</span> {{slide.winners[0].second.description}}
+      </h2>
+      <h1 *ngFor="let slide of winnerSlides; let i = index;" [class.active]="i === winnerCurrentIndex">{{slide.winners[0].third.name}}</h1>
+      <h2 *ngFor="let slide of winnerSlides; let i = index;" [class.active]="i === winnerCurrentIndex">
+        <span class="achievements-label">Achievements:</span> {{slide.winners[0].third.achievements}}
+      </h2>
+      <h2 *ngFor="let slide of winnerSlides; let i = index;" [class.active]="i === winnerCurrentIndex">
+        <span class="achievements-label">Description:</span> {{slide.winners[0].third.description}}
+      </h2>
     </div>
     <div class="triangle"></div>
       <div class="carousel">
@@ -59,8 +69,8 @@
           <h1>Winners:</h1>
           <div class="winners-board">
             <h2 *ngFor="let slide of winnerSlides; let i = index;" [class.active]="i === winnerCurrentIndex">{{slide.winners[0].first.name}}</h2>
-            <h2 *ngFor="let slide of winnerSlides; let i = index;" [class.active]="i === winnerCurrentIndex">{{slide.winners[0].second}}</h2>
-            <h2 *ngFor="let slide of winnerSlides; let i = index;" [class.active]="i === winnerCurrentIndex">{{slide.winners[0].third}}</h2>
+            <h2 *ngFor="let slide of winnerSlides; let i = index;" [class.active]="i === winnerCurrentIndex">{{slide.winners[0].second.name}}</h2>
+            <h2 *ngFor="let slide of winnerSlides; let i = index;" [class.active]="i === winnerCurrentIndex">{{slide.winners[0].third.name}}</h2>
           </div>
         </div>
       </div>

@@ -236,9 +236,15 @@ main {
   h2 {
     display: none;
   }
-
   /* Show the description for the active slide */
   h2.active {
+    display: block;
+  }
+  h1 {
+    display: none;
+  }
+  /* Show the description for the active slide */
+  h1.active {
     display: block;
   }
 }
@@ -262,5 +268,5 @@ main {
 }
 .achievements-label{
   font-weight: bold;
-  font-size: 24px;"
+  font-size: 24px;
 }

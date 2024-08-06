@@ -42,10 +42,20 @@ export class HomeComponent {
             {
               name:"1.Test Testov Testov1",
               achievements:"Winner of the \"Mountain Trail Challenge 2023\"",
-              description:""
+              description:"John showcased exceptional endurance and skill, conquering the rugged terrain with unmatched determination. His victory is a testament to his dedication and love for mountain biking."
             },
-          second:"2.Test Testov",
-          third:"3.Test"
+          second:
+            {
+              name:"2.Test Testov",
+              achievements:"Champion of the \"City Sprint Race 2023\"",
+              description:"Jane's lightning-fast speed and strategic maneuvers led her to triumph in the highly competitive city sprint race. Her win highlights her agility and tactical prowess in urban cycling.",
+          },
+          third:
+            {
+              name:"3.Test",
+              achievements:"First Place in the \"Coastal Cruise Marathon 2023\"",
+              description:"Mark demonstrated incredible stamina and consistency throughout the marathon, navigating the scenic coastal routes with ease. His achievement underscores his passion for long-distance cycling and his exceptional physical fitness.",
+          }
         }]
     },
     {
@@ -57,10 +67,20 @@ export class HomeComponent {
             {
               name:"1.Test Testov Testov2",
               achievements:"",
-              description: "John showcased exceptional endurance and skill, conquering the rugged terrain with unmatched determination. His victory is a testament to his dedication and love for mountain biking."
+              description: ""
             },
-          second:"2.Test Testov",
-          third:"3.Test"
+          second:
+            {
+              name:"2.Test Testov",
+              achievements:"",
+              description:"",
+            },
+          third:
+            {
+              name:"3.Test",
+              achievements:"",
+              description:"",
+            }
         }]
     },
   ]
