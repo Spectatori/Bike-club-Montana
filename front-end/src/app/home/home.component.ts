@@ -32,8 +32,37 @@ export class HomeComponent {
   }
 
   public winnerSlides= [
-    {src: 'assets/pictures/winner.jpg', alt:'winner', description:'„Огоста DH 2023“',winners:[{first:{name:"1.Test Testov Testov1", achievements:"Winner of the \"Mountain Trail Challenge 2023\""}, second:"2.Test Testov", third:"3.Test"}]},
-    {src: 'assets/pictures/tester.png', alt:'tester', description:'test' ,winners:[{first:{name:"1.Test Testov Testov2", achievements:""}, second:"2.Test Testov", third:"3.Test"}]},
+    {
+      src: 'assets/pictures/winner.jpg',
+      alt:'winner',
+      description:'„Огоста DH 2023“',
+      winners:[
+        {
+          first:
+            {
+              name:"1.Test Testov Testov1",
+              achievements:"Winner of the \"Mountain Trail Challenge 2023\"",
+              description:""
+            },
+          second:"2.Test Testov",
+          third:"3.Test"
+        }]
+    },
+    {
+      src: 'assets/pictures/tester.png',
+      alt:'tester', description:'test' ,
+      winners:[
+        {
+          first:
+            {
+              name:"1.Test Testov Testov2",
+              achievements:"",
+              description: "John showcased exceptional endurance and skill, conquering the rugged terrain with unmatched determination. His victory is a testament to his dedication and love for mountain biking."
+            },
+          second:"2.Test Testov",
+          third:"3.Test"
+        }]
+    },
   ]
   winnerCurrentIndex = 0;
   winnerNextSlide(){
