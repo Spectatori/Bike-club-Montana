@@ -126,7 +126,7 @@ main {
 .panels{
   display: flex;
   flex-direction: row;
-  align-items:center;
+  align-items:flex-start;
   justify-content:center;
   min-width:100%;
 

@@ -40,19 +40,19 @@ export class HomeComponent {
         {
           first:
             {
-              name:"1.Test Testov Testov1",
+              name:"1. Olivia Carter",
               achievements:"Winner of the \"Mountain Trail Challenge 2023\"",
               description:"John showcased exceptional endurance and skill, conquering the rugged terrain with unmatched determination. His victory is a testament to his dedication and love for mountain biking."
             },
           second:
             {
-              name:"2.Test Testov",
+              name:"2. Liam Johnson",
               achievements:"Champion of the \"City Sprint Race 2023\"",
               description:"Jane's lightning-fast speed and strategic maneuvers led her to triumph in the highly competitive city sprint race. Her win highlights her agility and tactical prowess in urban cycling.",
           },
           third:
             {
-              name:"3.Test",
+              name:"3. Sophia Martinez",
               achievements:"First Place in the \"Coastal Cruise Marathon 2023\"",
               description:"Mark demonstrated incredible stamina and consistency throughout the marathon, navigating the scenic coastal routes with ease. His achievement underscores his passion for long-distance cycling and his exceptional physical fitness.",
           }
@@ -65,21 +65,21 @@ export class HomeComponent {
         {
           first:
             {
-              name:"1.Test Testov Testov2",
-              achievements:"",
-              description: ""
+              name:"1. Ethan Thompson",
+              achievements:"Winner of the \"Cross-Country Cycling Championship 2023\"",
+              description: "Marcus exhibited exceptional endurance and agility throughout the Cross-Country Cycling Championship. His strategic navigation through challenging terrains and relentless pace secured him the top spot, underscoring his commitment and prowess in competitive cycling."
             },
           second:
             {
-              name:"2.Test Testov",
-              achievements:"",
-              description:"",
+              name:"2. Ava Roberts",
+              achievements:"Champion of the \"City Sprint Series 2023\"",
+              description:"Sofia clinched the title in the City Sprint Series with her remarkable speed and precision. Her ability to maneuver through urban obstacles and maintain peak performance in high-speed sprints demonstrates her elite skill and training in competitive cycling.",
             },
           third:
             {
-              name:"3.Test",
-              achievements:"",
-              description:"",
+              name:"3. Noah Williams",
+              achievements:"First Place in the \"Mountain Enduro Race 2023\"",
+              description:"Jake's victory in the Mountain Enduro Race was a testament to his technical skill and resilience. Mastering the steep descents and rugged trails, his exceptional bike handling and strategic riding secured him the first-place position, highlighting his expertise in enduro cycling.",
             }
         }]
     },
