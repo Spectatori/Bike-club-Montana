@@ -45,10 +45,10 @@
 .triangle {
   width: 2px;
   height: 2px;
-  border-top: 25.2vw solid #00EBBD;
-  border-bottom: 25.2vw solid transparent;
-  border-right: 25.2vw solid transparent;
-  border-left: 25.2vw solid #00EBBD;
+  border-top: 25.1vw solid #00EBBD;
+  border-bottom: 25.1vw solid transparent;
+  border-right: 25.1vw solid transparent;
+  border-left: 25.1vw solid #00EBBD;
   position: absolute;
   top: 0;
   left: 0;

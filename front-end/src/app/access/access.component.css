@@ -1,0 +1,40 @@
+.container{
+  display:flex;
+  position:relative;
+  height:90vh;
+  justify-content: center;
+  align-items: center;
+}
+.panel{
+  display:flex;
+  background-color:#4A55A2;
+  position:relative;
+  width:30vw;
+  height:60vh;
+  border-radius:5px;
+  flex-direction:column;
+}
+.header{
+  display:flex;
+  justify-content:center;
+  h1{
+    font-family:Verdana,serif;
+    font-size:2.5rem;
+    padding-top:2rem;
+    padding-bottom:4rem;
+    color:white;
+  }
+}
+.info{
+  display:flex;
+  justify-content:flex-start;
+  padding-left:3rem;
+  flex-direction:column;
+  h2{
+    font-family:Verdana,serif;
+    font-size:1.5rem;
+    color:white;
+  }
+}
+
+
