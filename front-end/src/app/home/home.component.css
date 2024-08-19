@@ -92,18 +92,6 @@ main {
   }
 }
 
-/*.semi-circle {*/
-/*  width: 40vw;*/
-/*  height: 40vw;*/
-/*  border-radius: 50%;*/
-/*  background-color: #00EBBD;*/
-/*  clip-path: polygon(0 0, 50% 0, 50% 50%, 50% 100%, 0 100%);*/
-/*  position: absolute;*/
-/*  right: -20vw; !* Adjusting to ensure the semi-circle is half off-screen *!*/
-/*  top: 50%;*/
-/*  transform: translateY(-50%);*/
-/*}*/
-
 .our-races{
   display:flex;
   width:100%;
