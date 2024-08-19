@@ -1,0 +1,24 @@
+.about{
+  display:flex;
+  min-height:90vh;
+  flex-direction:column;
+  justify-content:flex-start;
+}
+h1{
+  position:relative;
+  font-size:3rem;
+  font-weight:bold;
+  font-family: SansSerif, sans-serif;
+  padding-top:6rem;
+  padding-left:4rem;
+}
+h2{
+  position:relative;
+  font-size:1.5rem;
+  font-family: SansSerif, sans-serif;
+  padding-top:1.5rem;
+  padding-left:4rem;
+  display:flex;
+  width:60vw;
+}
+
