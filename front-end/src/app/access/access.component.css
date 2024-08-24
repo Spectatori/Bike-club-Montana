@@ -36,5 +36,47 @@
     color:white;
   }
 }
+.access-button-container{
+  display:flex;
+  align-items:center;
+  padding-top:2rem;
+  flex-direction:column;
+  .access-button{
+    background-color:white;
+    width:fit-content;
+    border-radius:3px;
+    font-size:1.5rem;
+    padding: 0.5rem 2rem;
+  }
+  h3{
+    color:white;
+    padding-top:0.5rem;
+  }
+}
+.input-container {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  gap:1rem;
+  .input-label{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    padding:0.5rem;
+    gap:1rem;
 
+    color:white;
+    font-family: 'Verdana', serif;
+    font-weight:bold;
+    font-size:1.2rem;
+  }
+  .input-text{
+    color:black;
+  }
+  input{
+    border-radius:3px;
+  }
+}
 

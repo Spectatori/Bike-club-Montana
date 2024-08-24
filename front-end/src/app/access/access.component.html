@@ -6,12 +6,30 @@
       <h1>Register</h1>
     </div>
     <div class="info">
-      <h2>Username</h2>
+      <div class="input-container">
+        <div *ngIf="accessIndex==1;">
+          <label class="input-label"> Username: <input class="input-text" type="text" [(ngModel)]="user.username"> </label>
+        </div>
+        <label class="input-label">Email: <input type="email"> </label>
+        <label class="input-label">Password:
+          <input type="password">
+        </label>
+        <div *ngIf="accessIndex==1;">
+          <label class="input-label">
+            Confirm Password:
+            <input type="password">
+          </label>
+        </div>
 
-      <h2>E-mail</h2>
-
-      <h2>Password</h2>
-
+      </div>
+    </div>
+    <div class="access-button-container">
+      <div class="access-button">
+        <h2>{{ accessIndex === 0 ? 'Login' : 'Register' }}</h2>
+      </div>
+      <h3 (click)="AccessChange()">
+        {{ accessIndex === 0 ? "Don't have an account? Press here to sign up!" : "Already have an account? Press here to sign in!" }}
+      </h3>
     </div>
   </div>
 </div>
