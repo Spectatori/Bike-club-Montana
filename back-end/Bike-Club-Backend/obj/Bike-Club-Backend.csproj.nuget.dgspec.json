@@ -1,0 +1,74 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/voivoda/Documents/projects/Bike-club-Montana/back-end/Bike-Club-Backend/Bike-Club-Backend.csproj": {}
+  },
+  "projects": {
+    "/home/voivoda/Documents/projects/Bike-club-Montana/back-end/Bike-Club-Backend/Bike-Club-Backend.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/voivoda/Documents/projects/Bike-club-Montana/back-end/Bike-Club-Backend/Bike-Club-Backend.csproj",
+        "projectName": "Bike-Club-Backend",
+        "projectPath": "/home/voivoda/Documents/projects/Bike-club-Montana/back-end/Bike-Club-Backend/Bike-Club-Backend.csproj",
+        "packagesPath": "/home/voivoda/.nuget/packages/",
+        "outputPath": "/home/voivoda/Documents/projects/Bike-club-Montana/back-end/Bike-Club-Backend/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/voivoda/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.108/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
